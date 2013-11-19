@@ -1,0 +1,62 @@
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.lazyLoadTab{
+    width:290px;
+    margin:20px auto;
+}
+.title {
+    background-position: 0 -604px;
+    border-left: 1px solid #E3E3E3;
+    border-right: 1px solid #E3E3E3;
+    border-top: 1px solid #E3E3E3;
+    height: 33px;
+    line-height: 33px;
+}
+.title li{
+    float:left;
+    padding: 0 14px;
+    cursor: pointer;
+    margin-right:5px;
+}
+.title li:hover, .title .current {
+    background-color: #FFFFFF;
+    border-left: 1px solid #E3E3E3;
+    border-right: 1px solid #E3E3E3;
+    border-top: 2px solid #3EA8F8;
+    font-weight: bold;
+    left: -1px;
+    line-height: 30px;
+    padding: 0 11px 2px;
+    position: relative;
+}
+.lazyLoadTab-box{
+    border:solid 1px #e3e3e3;
+}
+.lazyLoadTab-box li{
+    line-height: 30px;
+     border-top: 1px solid #F4F4F4;
+    margin-top: -1px;
+    padding: 0 10px;
+}
+.range {
+    border-radius: 2px;
+    display: block;
+    height: 17px;
+    line-height: 17px;
+    margin: 7px 10px 0 0;
+    text-align: center;
+    width: 17px;
+    float:left;
+}
+.Cff9601 {
+    background-color: #FF9601;
+    color: #FFFFFF;
+}
+.Ce6e6e6 {
+    background-color: #E6E6E6;
+    color: #222222;
+}
