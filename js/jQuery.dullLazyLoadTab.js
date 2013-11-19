@@ -44,11 +44,17 @@
 
 	//默认参数
 	dbUI.dullLazyLoadTab.defaults = {
+		//触发按钮
 		btnName: '.tab',
+		//切换内容
 		boxName: '.panel',
+		//请求路径
 		url: 'js/',
+		//请求方式
 		type: 'GET',
+		//请求数据类型
 		datatype: 'json',
+		//请求成功后回调
 		callback: null
 	};
 
@@ -69,10 +75,10 @@
 					//获取data-isLoad判断是否已加载内容
 					var dataLoad = $(this).attr('data-isLoad');
 					//获取事件序号
-					var $obj = self.$boxName.eq(index);				
+					var $obj = self.$boxName.eq(index);
 					$(this).addClass('current').siblings().removeClass('current');
 					var _self = this;
-				    //已加载
+					//已加载
 					if (dataLoad == 1) {
 						$obj.show().siblings().hide();
 					} else {
@@ -81,7 +87,7 @@
 							url: self.options.url + dataTab + '.json',
 							//请求方式
 							type: self.options.type,
-                            //数据类型
+							//数据类型
 							dataType: self.options.datatype,
 							beforeSend: function() {
 								$obj.html('加载中');
